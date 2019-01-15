@@ -1,10 +1,18 @@
 require_relative '../config/environment.rb'
 
-r = Restaurant.new("my restaurant name")
+#RESTAURANTS
+taco_bell = Restaurant.new("taco_bell")
+wendys = Restaurant.new("wendys")
 
-l1 = Location.new("my address", 4500, r)
-l2 = Location.new("another address", 5000, r)
-l3 = Location.new("yep, another one", 6000, r)
+#LOCATIONS
+noho = Location.new("noho", 4500, taco_bell)
+ues = Location.new("ues", 5000, wendys)
+mdtwn = Location.new("mdtwn", 6000, taco_bell)
+
+#Employees
+e1 = Employee.new("Amanda", noho, 100)
+e2 = Employee.new("Sarah", ues, 200)
+e3 = Employee.new("Austin", noho, 500)
 
 puts "did i run?"
 binding.pry

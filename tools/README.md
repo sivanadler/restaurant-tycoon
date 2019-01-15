@@ -5,6 +5,8 @@ Congrats!  You've been hired to build out an app for the booming restaurant busi
 If you are not sketching out your domain, and thinking about single source of truth,
 you should be!
 
+Restaurant >--- Location >---- Employee
+
 ## Topics
 
 - Classes vs Instances
